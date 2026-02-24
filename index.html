@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stanex Strategy — Strategic Procurement & Value Engineering</title>
+  <meta name="description" content="Stanex Strategy — strategic procurement & value engineering advisory. Strategy when direction is unclear. Execution when impact must be delivered." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Stanex Strategy" />
+  <meta property="og:description" content="Strategic Procurement & Value Engineering. Strategy + execution with measurable impact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://stanexstrategy.com/" />
+  <meta name="theme-color" content="#0B1220" />
+
+  <style>
+    :root{
+      --bg: #0B1220;
+      --panel: rgba(255,255,255,0.06);
+      --panel2: rgba(255,255,255,0.04);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.70);
+      --muted2: rgba(255,255,255,0.58);
+      --line: rgba(255,255,255,0.12);
+      --accent: rgba(255,255,255,0.92);
+      --shadow: 0 18px 60px rgba(0,0,0,0.45);
+      --radius: 18px;
+    }
+
+    *{ box-sizing: border-box; }
+    html, body { height: 100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background:
+        radial-gradient(1200px 700px at 15% 10%, rgba(255,255,255,0.08), transparent 60%),
+        radial-gradient(900px 600px at 85% 25%, rgba(255,255,255,0.06), transparent 55%),
+        radial-gradient(900px 700px at 55% 90%, rgba(255,255,255,0.05), transparent 55%),
+        var(--bg);
+      line-height: 1.5;
+    }
+
+    a{ color: var(--accent); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 20px 54px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding: 10px 2px 26px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width: 220px;
+    }
+
+    .mark{
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.22), rgba(255,255,255,0.06));
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.28);
+    }
+
+    .brand h1{
+      font-size: 15px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin:0;
+      color: var(--text);
+    }
+
+    .nav{
+      display:flex;
+      gap:18px;
+      flex-wrap: wrap;
+      justify-content:flex-end;
+    }
+    .nav a{
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+      align-items: stretch;
+      margin-top: 10px;
+    }
+
+    .card{
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--panel), var(--panel2));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+
+    .heroMain{
+      padding: 38px 34px;
+      position:relative;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .heroMain h2{
+      margin: 16px 0 10px;
+      font-size: clamp(30px, 4vw, 44px);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    .heroMain p{
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 62ch;
+    }
+
+    .ctaRow{
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items:center;
+      margin-top: 6px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 11px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.06);
+      color: var(--text);
+      font-size: 14px;
+      text-decoration:none;
+    }
+    .btn:hover{ background: rgba(255,255,255,0.09); text-decoration:none; }
+
+    .btn.primary{
+      background: rgba(255,255,255,0.92);
+      color: #0B1220;
+      border-color: rgba(255,255,255,0.35);
+    }
+    .btn.primary:hover{ background: rgba(255,255,255,0.98); }
+
+    .side{
+      padding: 22px 22px;
+      display:flex;
+      flex-direction:column;
+      gap: 12px;
+    }
+
+    .sideTitle{
+      font-size: 13px;
+      color: var(--muted2);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 2px 0 2px;
+    }
+
+    .sideItem{
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 14px;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .sideItem strong{
+      display:block;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .sideItem span{
+      display:block;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .grid .box{
+      padding: 18px 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.03);
+      min-height: 140px;
+    }
+
+    .kicker{
+      color: var(--muted2);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0 0 8px;
+    }
+
+    .box h3{
+      margin: 0 0 8px;
+      font-size: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .box p{
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .section{
+      margin-top: 18px;
+      padding: 26px 24px;
+    }
+
+    .section h3{
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+    }
+
+    .twoCol{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    ul.clean{
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+    ul.clean li{ margin: 8px 0; }
+
+    .contact{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+      align-items:center;
+    }
+
+    footer{
+      margin-top: 18px;
+      color: var(--muted2);
+      font-size: 13px;
+      padding: 10px 2px 0;
+      display:flex;
+      justify-content:space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .mini{
+      color: var(--muted2);
+      font-size: 13px;
+    }
+
+    @media (max-width: 920px){
+      .hero{ grid-template-columns: 1fr; }
+      .grid{ grid-template-columns: 1fr; }
+      .twoCol{ grid-template-columns: 1fr; }
+      header{ align-items:flex-start; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <h1>Stanex Strategy</h1>
+      </div>
+
+      <nav class="nav" aria-label="Navigation">
+        <a href="#what">What we do</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="card heroMain">
+          <div class="pill">Strategic Procurement &nbsp;•&nbsp; Value Engineering &nbsp;•&nbsp; CVR (Cost–Value–Risk)</div>
+
+          <h2>Strategy when direction is unclear.<br/>Execution when impact must be delivered.</h2>
+
+          <p>
+            Stanex Strategy supports industrial and mid-sized organizations in building procurement capabilities that
+            deliver structural savings, resilient supply chains, and measurable business impact.
+            Based in Belgium. Operating internationally.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn primary" href="mailto:info@stanexstrategy.com">Email: info@stanexstrategy.com</a>
+            <!-- Replace with your real LinkedIn URL -->
+            <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+
+          <p class="mini" style="margin-top:16px;">
+            Typical engagements: procurement transformation, strategic sourcing, supplier strategy, operating model design, interim leadership.
+          </p>
+        </div>
+
+        <aside class="card side" aria-label="Highlights">
+          <div class="sideTitle">Focus</div>
+
+          <div class="sideItem">
+            <strong>Strategy + Execution</strong>
+            <span>Senior advisory with hands-on delivery — built for real operations, not theory.</span>
+          </div>
+
+          <div class="sideItem">
+            <strong>Cost–Value–Risk</strong>
+            <span>Balanced decisions: not only price — value engineering and risk resilience included.</span>
+          </div>
+
+          <div class="sideItem">
+            <strong>International</strong>
+            <span>Global sourcing mindset. Local stakeholder alignment. Practical governance.</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="grid" id="what">
+        <div class="box">
+          <div class="kicker">Procurement Transformation</div>
+          <h3>Operating model & performance</h3>
+          <p>Redesign roles, processes, governance and tooling to move from purchasing to strategic procurement.</p>
+        </div>
+
+        <div class="box">
+          <div class="kicker">Strategic Sourcing</div>
+          <h3>Category & supplier strategy</h3>
+          <p>Structured opportunity identification, negotiations, and supplier strategy with measurable outcomes.</p>
+        </div>
+
+        <div class="box">
+          <div class="kicker">Value Engineering</div>
+          <h3>Cost without compromises</h3>
+          <p>Cross-functional value levers: specification, formulation, packaging, logistics, and make/buy choices.</p>
+        </div>
+      </section>
+
+      <section class="card section" id="approach">
+        <h3>Approach</h3>
+        <div class="twoCol">
+          <div class="box" style="min-height:auto;">
+            <div class="kicker">Principles</div>
+            <ul class="clean">
+              <li>Measurable impact, not slide volume</li>
+              <li>Fast diagnosis, clear roadmap, pragmatic delivery</li>
+              <li>Transparent assumptions and decision logic</li>
+              <li>Stakeholder alignment across Finance, Ops, R&amp;D, Sales</li>
+            </ul>
+          </div>
+
+          <div class="box" style="min-height:auto;">
+            <div class="kicker">Delivery modes</div>
+            <ul class="clean">
+              <li>Executive advisory (monthly / quarterly)</li>
+              <li>Project-based transformation</li>
+              <li>Interim procurement leadership</li>
+              <li>Workshops: CVR, supplier risk, value engineering</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card section" id="contact">
+        <h3>Contact</h3>
+        <p style="margin:0;color:var(--muted);">
+          For enquiries, proposals, or a first conversation:
+        </p>
+
+        <div class="contact">
+          <a class="btn primary" href="mailto:stan@stanexstrategy.com">stan@stanexstrategy.com</a>
+          <!-- Replace with your real LinkedIn URL -->
+          <a class="btn" href="https://www.linkedin.com/in/stanislasdenijs/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </section>
+
+      <footer>
+        <div>© <span id="y"></span> Stanex Strategy. Belgium • International</div>
+        <div class="mini">Hybrid positioning: strategic direction + hands-on execution.</div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
