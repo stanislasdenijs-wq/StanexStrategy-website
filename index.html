@@ -1,33 +1,28 @@
 <!doctype html>
 <html lang="en">
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Stanex Strategy",
-  "url": "https://stanexstrategy.com",
-  "logo": "https://stanexstrategy.com/logo.png",
-  "sameAs": [
-    "https://www.linkedin.com/in/stanislasdenijs/"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "stan@stanexstrategy.com",
-    "contactType": "customer service",
-    "url": "https://stanexstrategy.com"
-  }
-}
-</script>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Stanex Strategy — Strategic Procurement & Value Engineering</title>
   <meta name="description" content="Stanex Strategy — strategic procurement & value engineering advisory. Strategy when direction is unclear. Execution when impact must be delivered." />
   <meta name="robots" content="index,follow" />
+
+  <link rel="canonical" href="https://stanexstrategy.com/" />
+
+  <!-- Favicons (add these files to repo root when ready) -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Open Graph / Social -->
   <meta property="og:title" content="Stanex Strategy" />
   <meta property="og:description" content="Strategic Procurement & Value Engineering. Strategy + execution with measurable impact." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://stanexstrategy.com/" />
+  <meta property="og:image" content="https://stanexstrategy.com/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <meta name="theme-color" content="#0B1220" />
 
   <style>
@@ -312,6 +307,26 @@
       header{ align-items:flex-start; }
     }
   </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Stanex Strategy",
+    "url": "https://stanexstrategy.com/",
+    "logo": "https://stanexstrategy.com/logo.png",
+    "sameAs": ["https://www.linkedin.com/in/stanislasdenijs/"],
+    "email": "mailto:stan@stanexstrategy.com",
+    "areaServed": ["BE", "EU", "CA", "US"],
+    "serviceType": [
+      "Procurement transformation",
+      "Strategic sourcing",
+      "Supplier strategy",
+      "Value engineering"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -344,8 +359,7 @@
 
           <div class="ctaRow">
             <a class="btn primary" href="mailto:stan@stanexstrategy.com">Email: stan@stanexstrategy.com</a>
-            <!-- Replace with your real LinkedIn URL -->
-            <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn" href="https://www.linkedin.com/in/stanislasdenijs/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
 
           <p class="mini" style="margin-top:16px;">
@@ -426,14 +440,16 @@
 
         <div class="contact">
           <a class="btn primary" href="mailto:stan@stanexstrategy.com">stan@stanexstrategy.com</a>
-          <!-- Replace with your real LinkedIn URL -->
           <a class="btn" href="https://www.linkedin.com/in/stanislasdenijs/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </section>
 
       <footer>
         <div>© <span id="y"></span> Stanex Strategy. Belgium • International</div>
-        <div class="mini">Hybrid positioning: strategic direction + hands-on execution.</div>
+        <div class="mini">
+          Hybrid positioning: strategic direction + hands-on execution. &nbsp;|&nbsp;
+          Contact: <a href="mailto:stan@stanexstrategy.com">stan@stanexstrategy.com</a>
+        </div>
       </footer>
     </main>
   </div>
@@ -442,6 +458,4 @@
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 </body>
-
 </html>
-
