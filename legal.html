@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legal Notice — Stanex Strategy BV</title>
+  <meta name="description" content="Legal notice / imprint for Stanex Strategy BV." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://stanexstrategy.com/legal.html" />
+  <meta name="theme-color" content="#0B1220" />
+
+  <style>
+    :root{
+      --bg:#0B1220; --text:rgba(255,255,255,.92); --muted:rgba(255,255,255,.70);
+      --line:rgba(255,255,255,.12); --panel:rgba(255,255,255,.06); --panel2:rgba(255,255,255,.04);
+      --radius:18px; --shadow:0 18px 60px rgba(0,0,0,.45);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 15% 10%, rgba(255,255,255,0.08), transparent 60%),
+        radial-gradient(900px 600px at 85% 25%, rgba(255,255,255,0.06), transparent 55%),
+        radial-gradient(900px 700px at 55% 90%, rgba(255,255,255,0.05), transparent 55%),
+        var(--bg);
+      line-height:1.6;
+    }
+    a{color:rgba(255,255,255,.92); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:900px; margin:0 auto; padding:28px 20px 54px}
+    .card{
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, var(--panel), var(--panel2));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px 26px;
+    }
+    header{display:flex; justify-content:space-between; align-items:center; gap:14px; margin-bottom:16px}
+    .brand{letter-spacing:.08em; text-transform:uppercase; font-size:13px; color:rgba(255,255,255,.75)}
+    h1{margin:6px 0 6px; font-size:28px; letter-spacing:-.02em}
+    h2{margin:22px 0 8px; font-size:16px; letter-spacing:-.01em}
+    p, li{color:var(--muted)}
+    ul{margin:8px 0 0; padding-left:18px}
+    .meta{font-size:13px; color:rgba(255,255,255,.58); margin-top:6px}
+    .toplink{font-size:14px}
+    code{background:rgba(255,255,255,.06); padding:2px 6px; border-radius:8px; border:1px solid var(--line)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Stanex Strategy BV</div>
+      <div class="toplink"><a href="/">← Back to website</a></div>
+    </header>
+
+    <main class="card">
+      <h1>Legal Notice</h1>
+      <p class="meta">Last updated: <span id="d"></span></p>
+
+      <h2>Company information</h2>
+      <p>
+        <strong>Stanex Strategy BV</strong><br/>
+        Legal form: BV (Belgium)<br/>
+        Enterprise number (BE): <strong>BE 1034.096.214</strong><br/>
+        Registered office: Sint-Lucaslaan 74, 2180 Ekeren (Antwerp), Belgium
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:stan@stanexstrategy.com">stan@stanexstrategy.com</a><br/>
+        Website: <a href="https://stanexstrategy.com">https://stanexstrategy.com</a>
+      </p>
+
+      <h2>Website hosting</h2>
+      <p>
+        This website is hosted as a static site using GitHub Pages.
+      </p>
+
+      <h2>Liability</h2>
+      <p>
+        The content on this website is provided for general information purposes only. While we strive to keep information accurate and up to date,
+        we make no warranties of any kind regarding completeness, accuracy, reliability, or availability. Any reliance you place on such information
+        is strictly at your own risk.
+      </p>
+
+      <h2>External links</h2>
+      <p>
+        This website may contain links to external websites. We have no control over the content and availability of those sites and accept no
+        responsibility for them.
+      </p>
+
+      <h2>Intellectual property</h2>
+      <p>
+        Unless stated otherwise, all content on this website (text, layout, and branding elements) is the property of Stanex Strategy BV.
+        You may not reproduce or distribute it without prior written permission, except where permitted by applicable law.
+      </p>
+
+      <h2>Governing law</h2>
+      <p>
+        This legal notice is governed by Belgian law. Any disputes shall be subject to the competent courts in Belgium, unless mandatory law provides otherwise.
+      </p>
+
+      <p class="meta">
+        For information on how personal data is processed, see our <a href="/privacy.html">Privacy Notice</a>.
+      </p>
+    </main>
+  </div>
+
+  <script>
+    const d = new Date();
+    document.getElementById("d").textContent = d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+  </script>
+</body>
+</html>
