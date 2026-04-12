@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Stanex Strategy — Strategic Procurement & Value Engineering</title>
-  <meta name="description" content="Stanex Strategy — strategic procurement & value engineering advisory. Strategy when direction is unclear. Execution when impact must be delivered." />
+  <title>Procurement Transformation & Strategic Sourcing Consulting | Stanex Strategy</title>
+  <meta name="description" content="Procurement transformation, strategic sourcing and cost optimization consulting. Helping companies redesign procurement organizations, deliver savings and improve supplier strategy." />
   <meta name="robots" content="index,follow" />
 
   <link rel="canonical" href="https://stanexstrategy.com/" />
@@ -16,8 +16,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Stanex Strategy" />
-  <meta property="og:description" content="Strategic Procurement & Value Engineering. Strategy + execution with measurable impact." />
+  <meta property="og:title" content="Procurement Transformation & Strategic Sourcing Consulting | Stanex Strategy" />
+  <meta property="og:description" content="Stanex Strategy helps industrial companies redesign procurement organizations, deliver structural savings and improve supplier strategy." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://stanexstrategy.com/" />
   <meta property="og:image" content="https://stanexstrategy.com/og-image.png" />
@@ -31,7 +31,7 @@
       --panel: rgba(255,255,255,0.06);
       --panel2: rgba(255,255,255,0.04);
       --text: rgba(255,255,255,0.92);
-      --muted: rgba(255,255,255,0.70);
+      --muted: rgba(255,255,255,0.72);
       --muted2: rgba(255,255,255,0.58);
       --line: rgba(255,255,255,0.12);
       --shadow: 0 18px 60px rgba(0,0,0,0.45);
@@ -42,14 +42,14 @@
 
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       color: var(--text);
       background:
         radial-gradient(1200px 700px at 15% 10%, rgba(255,255,255,0.08), transparent 60%),
         radial-gradient(900px 600px at 85% 25%, rgba(255,255,255,0.06), transparent 55%),
         radial-gradient(900px 700px at 55% 90%, rgba(255,255,255,0.05), transparent 55%),
         var(--bg);
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
     a{ color: var(--text); text-decoration: none; }
@@ -66,10 +66,9 @@
       background: linear-gradient(180deg, var(--panel), var(--panel2));
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      overflow:hidden;
+      overflow: hidden;
     }
 
-    /* Banner */
     .bannerCard{
       margin-bottom: 24px;
     }
@@ -92,21 +91,40 @@
       margin-bottom: 16px;
     }
 
-    h2{
-      font-size: clamp(30px, 4vw, 44px);
+    h1, h2, h3{
       letter-spacing: -0.02em;
       margin: 0 0 14px;
+      line-height: 1.15;
+    }
+
+    h1{
+      font-size: clamp(32px, 4.4vw, 48px);
+    }
+
+    h2{
+      font-size: clamp(24px, 3vw, 34px);
+    }
+
+    h3{
+      font-size: 22px;
     }
 
     p{
       color: var(--muted);
+      margin: 0 0 14px;
+    }
+
+    .lead{
+      font-size: 17px;
+      color: var(--text);
+      max-width: 880px;
     }
 
     .ctaRow{
       display:flex;
       gap: 10px;
       flex-wrap: wrap;
-      margin-top: 20px;
+      margin-top: 22px;
     }
 
     .btn{
@@ -118,12 +136,19 @@
       border: 1px solid var(--line);
       background: rgba(255,255,255,0.06);
       font-size: 14px;
+      transition: transform 0.12s ease;
+    }
+
+    .btn:hover{
+      text-decoration: none;
+      transform: translateY(-1px);
     }
 
     .btn.primary{
       background: rgba(255,255,255,0.92);
       color: #0B1220;
       border-color: rgba(255,255,255,0.35);
+      font-weight: 600;
     }
 
     .grid{
@@ -144,6 +169,7 @@
       font-size: 13px;
       color: var(--muted2);
       text-transform: uppercase;
+      letter-spacing: 0.05em;
       margin-bottom: 8px;
     }
 
@@ -159,10 +185,34 @@
       margin-top: 14px;
     }
 
+    ul{
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    li{
+      margin-bottom: 8px;
+    }
+
+    .trust{
+      margin-top: 14px;
+      color: var(--text);
+      font-weight: 500;
+    }
+
     footer{
       margin-top: 40px;
       color: var(--muted2);
       font-size: 13px;
+    }
+
+    .footerLinks{
+      margin-top: 8px;
+    }
+
+    .footerLinks a{
+      margin-right: 12px;
     }
 
     @media (max-width: 920px){
@@ -179,8 +229,20 @@
     "name": "Stanex Strategy",
     "url": "https://stanexstrategy.com/",
     "logo": "https://stanexstrategy.com/logo.png",
-    "sameAs": ["https://www..com/in/stanislasdenijs/"],
-    "email": "mailto:stan@stanexstrategy.com"
+    "sameAs": [
+      "https://www.linkedin.com/in/stanislasdenijs/",
+      "https://www.linkedin.com/company/stanex-strategy/"
+    ],
+    "email": "mailto:stan@stanexstrategy.com",
+    "areaServed": "International",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sint-Lucaslaan 74",
+      "postalCode": "2180",
+      "addressLocality": "Ekeren",
+      "addressRegion": "Antwerp",
+      "addressCountry": "BE"
+    }
   }
   </script>
 </head>
@@ -191,49 +253,151 @@
 
       <!-- Banner -->
       <div class="card bannerCard">
-        <img class="bannerImage" src="/og-image.png" alt="Stanex Strategy — Strategic Procurement & Value Engineering">
+        <img class="bannerImage" src="/og-image.png" alt="Stanex Strategy — Procurement Transformation & Strategic Sourcing Consulting">
       </div>
 
-      <!-- Intro -->
-      <div class="card section">
-        <div class="pill">Strategic Procurement • Value Engineering • IMS & CVR (Cost–Value–Risk)</div>
+      <!-- Hero -->
+      <section class="card section">
+        <div class="pill">Procurement Transformation • Strategic Sourcing • Cost Optimization • CVR (Cost–Value–Risk)</div>
 
-        <h2>Strategy when direction is unclear.<br/>Execution when impact must be delivered.</h2>
+        <h1>
+          Procurement transformation that delivers measurable results.<br />
+          Not slides. Execution.
+        </h1>
 
-        <p>
-          Stanex Strategy supports industrial and mid-sized organizations in building procurement strategies and organizations that
-          deliver structural savings, measurable value, controlled risk, resilient supply chains, and measurable business impact.
+        <p class="lead">
+          Stanex Strategy helps industrial and mid-sized companies redesign procurement organizations, deliver structural savings and improve supplier strategy.
+          Led by a global procurement leader with experience across €700M spend, international teams, commodities, transformation and M&amp;A integration.
+        </p>
+
+        <p class="trust">
           Based in Belgium. Operating internationally.
         </p>
 
         <div class="ctaRow">
-          <a class="btn primary" href="mailto:stan@stanexstrategy.com">Email: stan@stanexstrategy.com</a>
-          <a class="btn" href="https://www.linkedin.com/in/stanislasdenijs/" target="_blank">LinkedIn Stan</a>
-          <a class="btn" href="https://www.linkedin.com/company/stanex-strategy/" target="_blank">LinkedIn Stanex</a>
-          
-        </a>
-</div>
+          <a class="btn primary" href="mailto:stan@stanexstrategy.com">Contact for a first discussion</a>
+          <a class="btn" href="https://www.linkedin.com/in/stanislasdenijs/" target="_blank" rel="noopener noreferrer">LinkedIn Stan</a>
+          <a class="btn" href="https://www.linkedin.com/company/stanex-strategy/" target="_blank" rel="noopener noreferrer">LinkedIn Stanex</a>
         </div>
-      </div>
+      </section>
+
+      <!-- Why Stanex -->
+      <section class="card section">
+        <h2>Why Stanex</h2>
+        <div class="twoCol">
+          <div class="box">
+            <div class="kicker">Strategy + Execution</div>
+            <p>
+              Stanex combines strategy and execution. Not only identifying what should change, but also helping to implement it in a practical and credible way.
+            </p>
+          </div>
+
+          <div class="box">
+            <div class="kicker">Real procurement experience</div>
+            <p>
+              Experience across direct, indirect and commodity procurement, including volatile markets, hedging, supplier strategy, SAP / SRM environments and post-acquisition integration.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <!-- Services -->
       <section class="grid">
         <div class="box">
           <div class="kicker">Procurement Transformation</div>
-          <strong>Operating model & performance</strong>
-          <p>Redesign roles, processes, governance and tooling to move from purchasing to strategic procurement.</p>
+          <strong>Operating model &amp; performance</strong>
+          <p>
+            Redesign procurement organizations, roles, governance and ways of working. Move from fragmented purchasing to a structured, high-performing procurement function.
+          </p>
         </div>
 
         <div class="box">
           <div class="kicker">Strategic Sourcing</div>
-          <strong>Category & supplier strategy</strong>
-          <p>Structured opportunity identification, negotiations, and supplier strategy with measurable outcomes.</p>
+          <strong>Category &amp; supplier strategy</strong>
+          <p>
+            Define and execute category and supplier strategies, including complex tenders, index-based pricing, supplier model redesign and long-term sourcing approaches.
+          </p>
         </div>
 
         <div class="box">
           <div class="kicker">Value Engineering</div>
-          <strong>Cost without compromises</strong>
-          <p>Cross-functional value levers: specification, formulation, packaging, logistics, and make/buy choices.</p>
+          <strong>Structural cost levers</strong>
+          <p>
+            Identify sustainable cost improvements beyond price: specifications, formulation, packaging, logistics, make-or-buy choices and supplier setup.
+          </p>
+        </div>
+      </section>
+
+      <!-- Typical situations -->
+      <section class="card section">
+        <h2>Typical situations</h2>
+
+        <div class="twoCol">
+          <div class="box">
+            <ul>
+              <li>Procurement is not delivering the expected savings</li>
+              <li>Roles and responsibilities are unclear</li>
+              <li>There is no consistent category or supplier strategy</li>
+              <li>The organization is too operational and not strategic enough</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <ul>
+              <li>Teams need to be restructured after growth or acquisitions</li>
+              <li>Large sourcing projects require external support</li>
+              <li>Cost, cash and risk are under pressure</li>
+              <li>Management wants procurement to contribute more structurally to performance</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Approach -->
+      <section class="card section">
+        <h2>How Stanex works</h2>
+
+        <div class="twoCol">
+          <div class="box">
+            <div class="kicker">Scan</div>
+            <p>
+              Assess the procurement organization, team structure, category approach, governance and performance levers.
+            </p>
+          </div>
+
+          <div class="box">
+            <div class="kicker">Design</div>
+            <p>
+              Define the right operating model, priorities and sourcing roadmap aligned with company strategy.
+            </p>
+          </div>
+
+          <div class="box">
+            <div class="kicker">Execute</div>
+            <p>
+              Support implementation of organizational changes, sourcing projects and supplier strategies with clear ownership and practical follow-through.
+            </p>
+          </div>
+
+          <div class="box">
+            <div class="kicker">Deliver</div>
+            <p>
+              Focus on measurable impact: structural savings, improved supplier positioning, better governance and a more scalable procurement organization.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Closing CTA -->
+      <section class="card section">
+        <h2>Need a fresh view on procurement performance?</h2>
+        <p class="lead">
+          Whether the challenge is transformation, savings, supplier strategy or post-acquisition integration, Stanex Strategy can help structure the right approach and deliver it.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="mailto:stan@stanexstrategy.com?subject=Introduction%20-%20Stanex%20Strategy">Start the conversation</a>
+          <a class="btn" href="mailto:stan@stanexstrategy.com">stan@stanexstrategy.com</a>
         </div>
       </section>
 
@@ -241,18 +405,15 @@
       <footer>
         <p>© <span id="y"></span> Stanex Strategy BV. Belgium • International</p>
         <p>
-          Registered office: Sint-Lucaslaan 74, 2180 Ekeren (Antwerp), Belgium<br/>
-          Enterprise number (BE): BE 1034.096.214<br/>
-          Contact: <a href="mailto:stan@stanexstrategy.com">stan@stanexstrategy.com</a>
-          | <a href="/privacy.html">Privacy</a>
-          | <a href="/legal.html">Legal notice</a>
+          Registered office: Sint-Lucaslaan 74, 2180 Ekeren (Antwerp), Belgium<br />
+          Enterprise number (BE): BE 1034.096.214
         </p>
-          <p>Connect with Stanex Strategy</p>
-  <a href="https://www.linkedin.com/company/stanex-strategy/" 
-     target="_blank" 
-     rel="noopener noreferrer">
-     Follow us on LinkedIn
-  </a>
+        <p class="footerLinks">
+          <a href="mailto:stan@stanexstrategy.com">stan@stanexstrategy.com</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/legal.html">Legal notice</a>
+          <a href="https://www.linkedin.com/company/stanex-strategy/" target="_blank" rel="noopener noreferrer">Follow Stanex on LinkedIn</a>
+        </p>
       </footer>
 
     </main>
@@ -263,6 +424,3 @@
   </script>
 </body>
 </html>
-
-
-
