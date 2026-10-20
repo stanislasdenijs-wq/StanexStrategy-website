@@ -4,11 +4,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Notice | Stanex Strategy</title>
-  <meta name="description" content="Privacy notice for Stanex Strategy explaining how we handle personal data when you visit our website or contact us." />
+
+  <title>Privacy Notice | Stanex Strategy BV</title>
+
+  <meta name="description"
+        content="Privacy notice for Stanex Strategy BV explaining how personal data is processed when you visit our website or contact us." />
+
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://stanexstrategy.com/privacy.html" />
   <meta name="theme-color" content="#F4F6F8" />
+
+  <!-- Favicons -->
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -28,28 +34,65 @@
       --accent: #16202A;
       --accent-soft: #EEF2F5;
     }
-    * { box-sizing: border-box; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      font-family: ui-sans-serif, system-ui, -apple-system,
+        Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(900px 500px at 0% 0%, rgba(22,32,42,.03), transparent 55%),
-        radial-gradient(700px 400px at 100% 0%, rgba(22,32,42,.025), transparent 50%),
+        radial-gradient(
+          900px 500px at 0% 0%,
+          rgba(22,32,42,.03),
+          transparent 55%
+        ),
+        radial-gradient(
+          700px 400px at 100% 0%,
+          rgba(22,32,42,.025),
+          transparent 50%
+        ),
         var(--bg);
       line-height: 1.58;
     }
-    a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
-    a:hover { color: var(--text); }
-    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 56px; }
+
+    a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      color: var(--text);
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 28px 20px 56px;
+    }
+
     .card {
-      background: linear-gradient(180deg, var(--panel), var(--panel2));
+      background: linear-gradient(
+        180deg,
+        var(--panel),
+        var(--panel2)
+      );
       border: 1px solid var(--line2);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       padding: 30px 28px;
     }
+
     header {
       display: flex;
       align-items: center;
@@ -57,6 +100,7 @@
       gap: 14px;
       margin-bottom: 22px;
     }
+
     .brand {
       color: var(--text);
       font-size: 13px;
@@ -64,19 +108,68 @@
       letter-spacing: .08em;
       text-transform: uppercase;
     }
-    .toplink { font-size: 14px; }
-    .toplink a { color: var(--muted); text-decoration: none; }
-    .toplink a:hover { text-decoration: underline; }
-    h1, h2 { color: var(--text); letter-spacing: -.02em; line-height: 1.2; }
-    h1 { font-size: clamp(30px, 4vw, 38px); margin: 0 0 8px; }
-    h2 { font-size: 19px; margin: 28px 0 9px; }
-    p, li, address { color: var(--muted); }
-    p { margin: 0 0 13px; }
-    strong { color: var(--text); }
-    ul { padding-left: 20px; margin: 8px 0 16px; }
-    li { margin-bottom: 8px; }
-    address { font-style: normal; line-height: 1.8; }
-    .meta { font-size: 13px; color: var(--muted2); margin: 6px 0 20px; }
+
+    .toplink {
+      font-size: 14px;
+    }
+
+    .toplink a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .toplink a:hover {
+      text-decoration: underline;
+    }
+
+    h1, h2 {
+      color: var(--text);
+      letter-spacing: -.02em;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(30px, 4vw, 38px);
+      margin: 0 0 8px;
+    }
+
+    h2 {
+      font-size: 19px;
+      margin: 28px 0 9px;
+    }
+
+    p, li, address {
+      color: var(--muted);
+    }
+
+    p {
+      margin: 0 0 13px;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 8px 0 16px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    address {
+      font-style: normal;
+      line-height: 1.8;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--muted2);
+      margin: 6px 0 20px;
+    }
+
     .company-info {
       background: #FFFFFF;
       border: 1px solid var(--line2);
@@ -84,8 +177,17 @@
       padding: 18px;
       margin-top: 12px;
     }
-    .company-info p:last-child { margin-bottom: 0; }
-    .divider { height: 1px; margin: 26px 0; background: var(--line2); }
+
+    .company-info p:last-child {
+      margin-bottom: 0;
+    }
+
+    .divider {
+      height: 1px;
+      margin: 26px 0;
+      background: var(--line2);
+    }
+
     .legal-footer {
       border-top: 1px solid var(--line2);
       padding-top: 18px;
@@ -93,72 +195,226 @@
       font-size: 13px;
       color: var(--muted2);
     }
-    .legal-footer p { color: var(--muted2); }
-    .footer-links { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 12px; }
-    .footer-links a { color: var(--muted); }
+
+    .legal-footer p {
+      color: var(--muted2);
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-top: 12px;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+    }
+
     @media (max-width: 600px) {
-      .wrap { padding: 20px 14px 36px; }
-      .card { padding: 24px 19px; }
-      header { align-items: flex-start; flex-direction: column; gap: 8px; }
-      .company-info { padding: 14px; }
+      .wrap {
+        padding: 20px 14px 36px;
+      }
+
+      .card {
+        padding: 24px 19px;
+      }
+
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .company-info {
+        padding: 14px;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
+
     <header>
       <div class="brand">Stanex Strategy BV</div>
-      <nav class="toplink" aria-label="Page navigation"><a href="/">← Back to website</a></nav>
+
+      <nav class="toplink" aria-label="Page navigation">
+        <a href="/">← Back to website</a>
+      </nav>
     </header>
+
     <main class="card">
+
       <h1>Privacy Notice</h1>
-      <p class="meta">Last updated:</p>
-      <p>This privacy notice explains how Stanex Strategy (“we”, “us”) processes personal data when you visit <a href="https://stanexstrategy.com/">stanexstrategy.com</a> or contact us. We process personal data in accordance with the EU General Data Protection Regulation (GDPR) and applicable Belgian data protection rules.</p>
+
+      <p class="meta">
+        Last updated:
+        <time datetime="2026-10-20">20 October 2026</time>
+      </p>
+
+      <p>
+        This privacy notice explains how Stanex Strategy BV
+        ("we", "us") processes personal data when you visit
+        <a href="https://stanexstrategy.com/">
+          stanexstrategy.com
+        </a>
+        or contact us.
+
+        We process personal data in accordance with the EU
+        General Data Protection Regulation (GDPR) and
+        applicable Belgian data protection rules.
+      </p>
 
       <h2>1. Data Controller</h2>
-      <p>Stanex Strategy<br>
-      Belgium (operating internationally)<br>
-      Email: <a href="mailto:stan@stanexstrategy.com">stan@stanexstrategy.com</a></p>
-      <p>Note: If you later have a registered office address / legal entity name / VAT number, add it here for maximum corporate trust.</p>
+
+      <div class="company-info">
+        <address>
+          <strong>Stanex Strategy BV</strong><br>
+          Legal form: Besloten Vennootschap
+          (Belgian private limited company)<br>
+          Registered office:<br>
+          Sint-Lucaslaan 74<br>
+          2180 Ekeren (Antwerp)<br>
+          Belgium
+        </address>
+
+        <p style="margin-top:12px">
+          Enterprise number: 1034.096.214<br>
+          VAT number: BE 1034.096.214<br>
+          Email:
+          <a href="mailto:stan@stanexstrategy.com">
+            stan@stanexstrategy.com
+          </a>
+        </p>
+      </div>
 
       <h2>2. What personal data we process</h2>
+
       <ul>
-        <li>Contact data you provide (e.g., name, email address, company, phone number) when you email us.</li>
-        <li>Message content and any attachments you send.</li>
-        <li>Basic technical data required to deliver the website (e.g., IP address and browser information) as part of standard web requests.</li>
+        <li>
+          Contact data you provide (e.g., name, email
+          address, company, phone number) when you
+          email us.
+        </li>
+
+        <li>
+          Message content and any attachments you send.
+        </li>
+
+        <li>
+          Basic technical data required to deliver the
+          website (e.g., IP address and browser information)
+          as part of standard web requests.
+        </li>
       </ul>
 
       <h2>3. Purposes and legal bases</h2>
-      <p>We process personal data for the following purposes:</p>
+
+      <p>
+        We process personal data for the following purposes:
+      </p>
+
       <ul>
-        <li>Responding to enquiries and communicating with you — GDPR Art. 6(1)(b) (steps prior to contract) and/or Art. 6(1)(f) (legitimate interests).</li>
-        <li>Providing services and managing client relationships — GDPR Art. 6(1)(b) (contract).</li>
-        <li>Compliance with legal obligations (e.g., accounting where applicable) — GDPR Art. 6(1)(c).</li>
+        <li>
+          Responding to enquiries and communicating with
+          you — GDPR Art. 6(1)(b) (steps prior to contract)
+          and/or Art. 6(1)(f) (legitimate interests).
+        </li>
+
+        <li>
+          Providing services and managing client
+          relationships — GDPR Art. 6(1)(b) (contract).
+        </li>
+
+        <li>
+          Compliance with legal obligations
+          (e.g., accounting where applicable)
+          — GDPR Art. 6(1)(c).
+        </li>
       </ul>
 
       <h2>4. Cookies and analytics</h2>
-      <p>We do not intentionally use marketing cookies. If we add analytics in the future (e.g., Google Analytics), we will update this notice and, where required, request consent before placing non-essential cookies.</p>
+
+      <p>
+        We do not intentionally use marketing cookies.
+        If we add analytics in the future
+        (e.g., Google Analytics), we will update this
+        notice and, where required, request consent
+        before placing non-essential cookies.
+      </p>
 
       <h2>5. Recipients and processors</h2>
-      <p>We may use trusted service providers to operate our business and website:</p>
+
+      <p>
+        We may use trusted service providers to operate
+        our business and website:
+      </p>
+
       <ul>
-        <li>Email provider: Microsoft 365 (email communications).</li>
-        <li>Website hosting: GitHub Pages (static hosting).</li>
-        <li>Domain/DNS: your domain registrar/DNS provider.</li>
+        <li>
+          Email provider: Microsoft 365
+          (email communications).
+        </li>
+
+        <li>
+          Website hosting: GitHub Pages
+          (static hosting).
+        </li>
+
+        <li>
+          Domain and DNS infrastructure:
+          our domain registrar and DNS provider.
+        </li>
       </ul>
-      <p>These providers may process personal data on our behalf as “processors” under GDPR, under appropriate contractual and security safeguards.</p>
+
+      <p>
+        These providers may process personal data on our
+        behalf as processors under GDPR, under appropriate
+        contractual and security safeguards.
+      </p>
 
       <h2>6. International transfers</h2>
-      <p>Some of our providers may process data outside the European Economic Area (EEA). Where this occurs, we rely on appropriate safeguards such as adequacy decisions and/or Standard Contractual Clauses (SCCs) as applicable.</p>
+
+      <p>
+        Some of our providers may process data outside
+        the European Economic Area (EEA).
+
+        Where this occurs, we rely on appropriate
+        safeguards such as adequacy decisions and/or
+        Standard Contractual Clauses (SCCs) as applicable.
+      </p>
 
       <h2>7. Retention</h2>
-      <p>We keep personal data only as long as necessary for the purposes described above, including to respond to enquiries and meet legal obligations. Business emails may be retained for a reasonable period to maintain professional records.</p>
+
+      <p>
+        We keep personal data only as long as necessary
+        for the purposes described above, including to
+        respond to enquiries and meet legal obligations.
+
+        Business emails may be retained for a reasonable
+        period to maintain professional records.
+      </p>
 
       <h2>8. Security</h2>
-      <p>We use reasonable technical and organizational measures to protect personal data, including access controls and multi-factor authentication for email accounts. No internet transmission is 100% secure, but we work to reduce risk.</p>
+
+      <p>
+        We use reasonable technical and organizational
+        measures to protect personal data, including
+        access controls and multi-factor authentication
+        for email accounts.
+
+        No internet transmission is 100% secure, but we
+        work to reduce risk.
+      </p>
 
       <h2>9. Your rights</h2>
-      <p>Subject to the conditions in GDPR, you may have the right to:</p>
+
+      <p>
+        Subject to the conditions in GDPR, you may have
+        the right to:
+      </p>
+
       <ul>
         <li>Request access to your personal data</li>
         <li>Request rectification (correction)</li>
@@ -168,21 +424,61 @@
         <li>Data portability (where applicable)</li>
         <li>Withdraw consent (where processing is based on consent)</li>
       </ul>
-      <p>To exercise your rights, contact us at <a href="mailto:stan@stanexstrategy.com">stan@stanexstrategy.com</a>.</p>
+
+      <p>
+        To exercise your rights, contact us at
+        <a href="mailto:stan@stanexstrategy.com">
+          stan@stanexstrategy.com
+        </a>.
+      </p>
 
       <h2>10. Complaints</h2>
-      <p>If you believe your data protection rights have been infringed, you may lodge a complaint with your local supervisory authority. In Belgium, this is the Belgian Data Protection Authority (Autorité de protection des données / Gegevensbeschermingsautoriteit).</p>
+
+      <p>
+        If you believe your data protection rights have
+        been infringed, you may lodge a complaint with
+        your local supervisory authority.
+
+        In Belgium, this is the Belgian Data Protection
+        Authority (Gegevensbeschermingsautoriteit).
+      </p>
+
+      <p>
+        Website:
+        <a href="https://www.gegevensbeschermingsautoriteit.be/"
+           target="_blank"
+           rel="noopener noreferrer">
+          www.gegevensbeschermingsautoriteit.be
+        </a>
+      </p>
 
       <h2>11. Changes to this notice</h2>
-      <p>We may update this privacy notice from time to time. The “Last updated” date at the top indicates when changes were made.</p>
+
+      <p>
+        We may update this privacy notice from time to
+        time. The "Last updated" date at the top indicates
+        when changes were made.
+      </p>
 
       <footer class="legal-footer">
-        <nav class="footer-links" aria-label="Footer navigation">
+
+        <nav class="footer-links"
+             aria-label="Footer navigation">
+
           <a href="/">Home</a>
-          <a href="/legal.html">Legal Notice</a>
-          <a href="mailto:stan@stanexstrategy.com">Contact</a>
+
+          <a href="/legal.html">
+            Legal Notice
+          </a>
+
+          <a href="mailto:stan@stanexstrategy.com">
+            Contact
+          </a>
+
         </nav>
+
       </footer>
+
     </main>
   </div>
 </body>
